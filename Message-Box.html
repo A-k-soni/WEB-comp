@@ -1,0 +1,183 @@
+<html>
+    <head>
+        <title>Message Box!</title>
+        <style type="text/css">
+                
+            
+            
+                html{
+                    background-image: linear-gradient(to right,#cc2b5e,#753a88);                
+                }
+            body{
+                background:none;
+            }
+            
+               .topnav {
+                  background-color: #333;
+                  overflow: hidden;
+                }
+
+               
+                .topnav a {
+                  float: left;
+                  display: block;
+                  color: #f2f2f2;
+                  text-align: center;
+                  padding: 14px 16px;
+                  text-decoration: none;
+                  font-size: 17px;
+                }
+
+               
+                .topnav a:hover {
+                 
+                  text-decoration-color: aqua;
+                  font-size: 120%;
+                }
+
+               
+                .topnav a.active {
+                  background-color: #D6A4A4;
+                  color: white;
+                  font-size: 120%;
+                }
+
+               
+                .topnav .icon {
+                  display: none;
+                }
+            
+            .dropdown {
+                  float: left;
+                  overflow: hidden;
+                }
+
+                
+                .dropdown .dropbtn {
+                  font-size: 16px;
+                  border: none;
+                  outline: none;
+                  color: white;
+                  padding: 14px 16px;
+                  background-color: inherit;
+                  font-family: inherit; 
+                  margin: 0; 
+                }
+
+               
+                .navbar a:hover, .dropdown:hover .dropbtn {
+                  background-color: #D6A4A4;
+                }
+
+               
+                .dropdown-content {
+                  display: none;
+                  position: absolute;
+                  background-color: #f9f9f9;
+                  min-width: 160px;
+                  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                  z-index: 1;
+                }
+
+                
+                .dropdown-content a {
+                  float: none;
+                  color: black;
+                  padding: 12px 16px;
+                  text-decoration: none;
+                  display: block;
+                  text-align: left;
+                }
+
+              
+                .dropdown-content a:hover {
+                  background-color: #ddd;
+                }
+
+                
+                .dropdown:hover .dropdown-content {
+                  display: block;
+                }
+                #page-container{
+                 width:1200px;
+                 margin:0 auto;
+               
+                }
+            #details{
+                font-size:25px;
+            }
+            #email{
+                font-size: 20px;
+            }
+          
+        </style>
+    </head>
+    <body>
+        <div class="topnav" id="myTopnav">
+          <a href="#home" class="active">Home</a>
+          <a href="#news">About Us</a>
+          <a href="#contact">Contact US</a>
+          <div class="dropdown" class="topnav"  >
+            <button class="dropbtn">Our Other Ventures
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Read and Develop</a>
+              <a href="#">Food App</a>
+              <a href="#">Tomorrowland</a>
+              <a href="#">Shopping App</a>
+          </div>
+          
+        </div>
+        </div>
+        
+        <!---------------------------------------Content--------------------------------------------------------->
+        <div id="page-container" style="margin-top:30px;">
+            <div id="main-article">
+                <center><form id="details">
+                  <div id="first">
+                   <label for="email"  style="color:black;font-weight:bold">Enter Receiver's Name
+                    <br><small id="emailHelp" style="color:skyblue;font-weight:bold" class="form-text">(Only for CDAC students)</small></label><br>
+                     <input type="text"  name="receivername" id="email" placeholder="Enter Name" style="margin-top:10px;">
+                     <br>
+                   
+                    <h4>OR</h4>     
+                    
+                    <label for="email"  style="color:black;font-weight:bold">Enter Receiver's Email</label>
+                    <br>
+                     <input type="email"  name="receiveremail" id="email" placeholder="name@xyz.com" style="margin-top:10px;">
+                     <br>  
+                     <br>
+                    </div>
+                    <div id="second" >
+                     
+                    <label for="email"  style="color:black;font-weight:bold">Write your <b>Message</b> here!</label>
+                    <br>
+                     <input type="email"  name="receiveremail" id="msgbox"  style="margin-top:10px; width:400px;height:200px;">
+                     <br>  
+                     <input type="submit" style="margin-top:10px; background-color:darkseagreen; font-size:15px;" value="Send"  >  
+                    </div>           
+
+                    </form>
+                </center>
+                </div>
+              
+            </div>
+                
+           
+        
+       <!---------------------------------------Java Script---------------------------------------------------> 
+        <script type="text/javascript">
+            function myFunction() {
+                  var x = document.getElementById("myTopnav");
+                  if (x.className === "topnav") {
+                    x.className += " responsive";
+                  } else {
+                    x.className = "topnav";
+                  }
+                }
+        
+        
+        </script>
+    </body>
+</html>
